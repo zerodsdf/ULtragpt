@@ -1,0 +1,38 @@
+{
+  "name": "ultragpt-connect",
+  "version": "0.1.6",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "UltraGPT 本地 API 配置助手：Claude 与 Codex 一键导入、备份和恢复",
+  "homepage": "https://ultragpt.xyz.org.mx",
+  "scripts": {
+    "dev": "tauri dev",
+    "dev:web": "vite --host 127.0.0.1",
+    "build:web": "tsc --noEmit && vite build",
+    "build": "tauri build",
+    "build:macos": "node scripts/build-macos.mjs",
+    "build:windows": "node scripts/build-windows-portable.mjs",
+    "package:windows": "node scripts/build-windows-portable.mjs --package-only",
+    "tauri": "tauri",
+    "check": "tsc --noEmit",
+    "test:stations": "node --experimental-strip-types --test tests/stations.test.ts",
+    "test:core": "cargo test --manifest-path src-tauri/Cargo.toml --no-default-features",
+    "test:ui": "node --experimental-strip-types --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.8.0",
+    "lucide-react": "^0.542.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.8.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "typescript": "^5.7.0",
+    "vite": "^7.3.0"
+  },
+  "packageManager": "pnpm@10.28.0"
+}
