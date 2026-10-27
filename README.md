@@ -1,7 +1,7 @@
 # UltraGPT-Connect
 
 UltraGPT 本地 API 配置助手，基于 SuperGPT Connect v0.1.6 的 MIT 开源代码定制。默认接入 **https://ultragpt.xyz.org.mx**，不需要用户手动填写中转地址。
-
+想要不降智、不掺水的超低价api看这里：https://ultragpt.xyz.org.mx
 ## 使用
 
 1. 解压对应系统的软件包，打开 UltraGPT-Connect。
